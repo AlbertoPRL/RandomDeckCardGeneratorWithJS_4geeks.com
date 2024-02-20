@@ -37,7 +37,7 @@ const generateCardWithTimeoutToggle = () => {
         timeoutButton.innerHTML = "Set interval 10s";
     }
     else {
-        intervalId = setInterval(generateCard, 1000);
+        intervalId = setInterval(generateCard, 10000);
         timeoutButton.innerHTML = "Stop interval";
     }
     isIntervalSet = !isIntervalSet;
