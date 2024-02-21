@@ -21,11 +21,11 @@ const pipArray = [
 ];
 
 const generateCard = () => {   
-    const cardValue = valueArray[randomIndex(valueArray)];
-    const cardPip = pipArray[randomIndex(pipArray)];
-    value.innerHTML = cardValue;
+    const newCardValue = valueArray[randomIndex(valueArray)];
+    const newCardPip = pipArray[randomIndex(pipArray)];
+    value.innerHTML = newCardValue;
     for (let pip of pips) {
-        pip.innerHTML = cardPip;
+        pip.innerHTML = newCardPip;
         pip.classList.add("pip");
     }
 };
