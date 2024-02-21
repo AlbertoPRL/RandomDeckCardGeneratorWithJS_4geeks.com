@@ -12,16 +12,15 @@ const submitCardSizeChangeButton = document.querySelector("#change-card-size");
 
 let isIntervalSet = false;
 let intervalId = null;
+const valueArray = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+const pipArray = [
+    '<i class="bi bi-suit-club-fill pip-size"></i>',
+    '<i class="bi bi-suit-spade-fill pip-size"></i>',
+    '<i class="bi bi-diamond-fill pip-size" style="color: red"></i>',
+    '<i class="bi bi-suit-heart-fill pip-size" style="color: red"></i>'
+];
 
-
-const generateCard = () => {
-    const valueArray = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-    const pipArray = [
-        '<i class="bi bi-suit-club-fill pip-size"></i>',
-        '<i class="bi bi-suit-spade-fill pip-size"></i>',
-        '<i class="bi bi-diamond-fill pip-size" style="color: red"></i>',
-        '<i class="bi bi-suit-heart-fill pip-size" style="color: red"></i>'
-    ];
+const generateCard = () => {   
     const cardValue = valueArray[randomIndex(valueArray)];
     const cardPip = pipArray[randomIndex(pipArray)];
     value.innerHTML = cardValue;
