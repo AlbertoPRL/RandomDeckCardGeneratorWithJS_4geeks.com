@@ -12,53 +12,14 @@
     <div class="container-fluid bg-success d-flex align-items-center justify-content-center h-100">
         <div class="container">
             <div class="col-12 d-flex flex-column justify-content-center align-items-center gap-1">
-                <div class="d-flex flex-column justify-content-between w-50 bg-white gap-4" id="resizable-card">
-                    <div class="w-100 d-flex align-items-center justify-content-start ps-4 pip">
-                    </div>
-                    <div class="w-100 d-flex align-items-center justify-content-center">
-                        <p class="large" id="value">8</p>
-                    </div>
-                    <div class="w-100 d-flex align-items-center justify-content-end px-4 pip">
-                    </div>
+                <div class="d-flex flex-column justify-content-between w-50 bg-white gap-4" id="card-container">
                 </div>
                 <div class="d-flex align-items-center justify-content-center gap-2">
-                    <button class="btn btn-light" id="button">Change Card</button>
-                    <button class="btn btn-light" id="timeout-button">Set timeout 10s</button>
-                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Input Width and Height
-                    </button>
+                    <button class="btn btn-light" id="button">Generate Card</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Input your width and height</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="width-height-input">
-                    <div class="mb-3">
-                      <label for="width-input" class="form-label">Width</label>
-                      <input type="number" class="form-control" id="width-input" aria-describedby="widthInput">
-                      <div id="widthHelp" class="form-text">Width and Height values must be declared in px</div>
-                    </div>
-                    <div class="mb-3">
-                      <label for="height-input" class="form-label">Height</label>
-                      <input type="number" class="form-control" id="height-input">
-                      <div id="heightHelp" class="form-text">Width and Height values must be declared in px</div>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" form="width-height-input" id="change-card-size">Change Width and Height</button>
-            </div>
-          </div>
-        </div>
-      </div>
     <script src="https://kit.fontawesome.com/334736a3ab.js" crossorigin="anonymous"></script>
 </body>
 
